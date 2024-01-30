@@ -70,7 +70,7 @@ public class CodeBreaker_Swingver3 implements ActionListener{
         table = new JTable(tableModel);
         table.setEnabled(false);
         table.setFont(new Font(Font.DIALOG, Font.PLAIN, 16));
-        table.setRowHeight(23);
+        table.setRowHeight(22);
         JTableHeader jh = table.getTableHeader();
         jh.setFont(new Font(jh.getFont().getFamily(),Font.PLAIN,15));
         DefaultTableCellRenderer tableCellRenderer = new DefaultTableCellRenderer();
