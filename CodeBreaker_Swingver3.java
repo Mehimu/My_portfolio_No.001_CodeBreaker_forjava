@@ -17,11 +17,6 @@ import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Dimension;
 
-/*未実装のところについて
- * それぞれの背景色の選定及び実装（01/23）
- * テーブルのヘッダについて（01/26）
- */
-
 public class CodeBreaker_Swingver3 implements ActionListener{
     JFrame frame;
     JLabel title;
