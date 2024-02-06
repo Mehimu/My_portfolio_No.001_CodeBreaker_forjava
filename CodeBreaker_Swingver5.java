@@ -234,7 +234,12 @@ public class CodeBreaker_Swingver5 implements ActionListener{
                     table.setValueAt(hit + "&" + blow, tRowCount, tColumnCount);
                     tRowCount += 1; tColumnCount -= 1;
                     if(hit == answerlength){
-                        subText.setText("大正解！");
+                        if (tRowCount == 2) {
+                            subText.setText("一撃!!");
+                        }
+                        else{
+                            subText.setText("大正解！");
+                        }
                         stateButtonAction("answer");
                         giveUp.setEnabled(false);
                     }
@@ -350,6 +355,9 @@ public class CodeBreaker_Swingver5 implements ActionListener{
                 input[p] = -1;
                 tent.setText("");
             }
+            Rectangle r = table.getCellRect(0, 0, true);
+            table.scrollRectToVisible(r);
+            tableModel.setCaretPosition(100);
         }
     }
     void clickNumber(String str){
