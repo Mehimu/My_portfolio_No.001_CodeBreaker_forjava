@@ -61,7 +61,7 @@ public class CodeBreaker_Swingver5 implements ActionListener{
         
     }
     public void GameEngine(){
-        frame = new JFrame("Hit&blow Swingバージョン4");
+        frame = new JFrame("Hit&blow Swing ver.5");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(700, 700);
         frame.setLocationRelativeTo(null);
